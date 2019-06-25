@@ -26,32 +26,28 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d17877afea5373fc95d5.js"
+    "url": "webpack-runtime-54c0ef114c75bcf0ba07.js"
   },
   {
-    "url": "app-010b09ed459a37a9ba2b.js"
+    "url": "app-f8517e72bcaff1d149fe.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ad10c46db61d4b66e29d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "8826ec33c9ed717517ad90386dc3a62b"
+    "revision": "f07b9d980e16658e6075ea42381fcc18"
   },
   {
     "url": "component---src-pages-404-js-5fa8d4f143fc30bdb26c.js"
   },
   {
     "url": "page-data/404.html/page-data.json",
-    "revision": "a7cd7417ab28964eda20259aff2e1780"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "7ca60aa9cae75036cabbe553705474b2"
+    "revision": "423a1d6bc2a8048b15c61a9029e30e40"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "70f03a2a1aad4bd2cfbab38ccadec5d1"
+    "revision": "7f2672f94fa51658e8995a8ad755ff70"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -73,7 +69,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/nishantkr.com/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -145,7 +141,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/nishantkr.com${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
