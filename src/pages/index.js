@@ -18,6 +18,7 @@ const Hero = () => {
         background: ${theme.colors.primary};
         padding: 20px 0 30px 0;
         display: flex;
+        display: none;
       `}
     >
       <Container
@@ -35,9 +36,7 @@ const Hero = () => {
             margin: 0;
             max-width: ${rhythm(15)};
           `}
-        >
-          Your blog says the things you want to say.
-        </h1>
+        ></h1>
       </Container>
       <div
         css={css`

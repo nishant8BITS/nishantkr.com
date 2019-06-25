@@ -6,8 +6,7 @@ module.exports = {
   siteUrl: 'https://nishantkr.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
-  siteDescription:
-    'Come check out how Nishant Kr. can help you level up your career as a software engineer.',
+  siteDescription: 'Nishant Kr. Personal Blog',
   author: 'Nishant Kr.', // Author for schemaORGJSONLD
   organization: 'Nishant Kr.',
 
